@@ -1,0 +1,20 @@
+{
+  "name": "Open Transit Server",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "server",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylint",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "postCreateCommand": "uv sync",
+  "forwardPorts": [8000, 5432]
+}
