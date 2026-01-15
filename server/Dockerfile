@@ -2,11 +2,15 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
-# Install system dependencies for psycopg and geoalchemy2
+# Install system dependencies for psycopg, geoalchemy2, and VS Code dev containers
 RUN apt-get update && apt-get install -y \
     libpq-dev \
     gcc \
     libgeos-dev \
+    git \
+    curl \
+    wget \
+    procps \
     && rm -rf /var/lib/apt/lists/*
 
 # Install uv for fast package management

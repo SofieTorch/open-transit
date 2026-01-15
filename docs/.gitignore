@@ -1,0 +1,16 @@
+# Obsidian local settings and cache
+.obsidian/
+.trash/
+.cache/
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+
+# Local plugins
+.make-md/
+.space/
+Tags/
