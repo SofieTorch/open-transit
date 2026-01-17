@@ -15,7 +15,7 @@ from models.user import User  # noqa: F401
 config = context.config
 
 # Override sqlalchemy.url with environment variable if present
-database_url = os.getenv("DATABASE_URL")
+database_url = os.getenv("DATABASE_URL_ALEMBIC")
 if database_url:
     config.set_main_option("sqlalchemy.url", database_url)
 
